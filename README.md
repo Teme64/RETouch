@@ -6,6 +6,7 @@ RETouch is a windows application for deobfuscating and analyzing malicious scrip
 RETouch aims to be
 -	extendible with scripting
 -	"umbrella" for external applications
+
 Because malware and malicious scripts evolve quickly, the core functionality is just not enough. That is why RETouch provides easy scripting to extend its core functions.
 
 
