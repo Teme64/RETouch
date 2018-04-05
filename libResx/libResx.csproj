@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6FD430F-7647-4C0C-94E6-98B67264E9D0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RETouchResource</RootNamespace>
+    <AssemblyName>libResx</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="libResx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\retouch-10-million-passw.csv" />
+    <None Include="Data\retouch-all3.csv" />
+    <None Include="Data\retouch-apis-advapi32.csv" />
+    <None Include="Data\retouch-apis-comctl32.csv" />
+    <None Include="Data\retouch-apis-comdlg32.csv" />
+    <None Include="Data\retouch-apis-crypt32.csv" />
+    <None Include="Data\retouch-apis-gdi32.csv" />
+    <None Include="Data\retouch-apis-imm32.csv" />
+    <None Include="Data\retouch-apis-kernel32.csv" />
+    <None Include="Data\retouch-apis-mpr.csv" />
+    <None Include="Data\retouch-apis-netapi32.csv" />
+    <None Include="Data\retouch-apis-new_template.csv" />
+    <None Include="Data\retouch-apis-ntdll.csv" />
+    <None Include="Data\retouch-apis-ole32.csv" />
+    <None Include="Data\retouch-apis-oleaut32.csv" />
+    <None Include="Data\retouch-apis-shell32.csv" />
+    <None Include="Data\retouch-apis-shlwapi.csv" />
+    <None Include="Data\retouch-apis-template.csv" />
+    <None Include="Data\retouch-apis-user32.csv" />
+    <None Include="Data\retouch-apis-version.csv" />
+    <None Include="Data\retouch-apis-wininet.csv" />
+    <None Include="Data\retouch-apis-winspool.csv" />
+    <None Include="Data\retouch-filetypes.csv" />
+    <None Include="Data\retouch-table-ascii.csv" />
+    <None Include="Data\retouch-template- kopio.csv" />
+    <None Include="Data\retouch-template.csv" />
+    <None Include="Data\retouch-wordlist-allscript.csv" />
+    <None Include="Data\retouch-wordlist-bat.csv" />
+    <None Include="Data\retouch-wordlist-csharp.csv" />
+    <None Include="Data\retouch-wordlist-document-docx.csv" />
+    <None Include="Data\retouch-wordlist-document-image.csv" />
+    <None Include="Data\retouch-wordlist-document-pdf.csv" />
+    <None Include="Data\retouch-wordlist-html.csv" />
+    <None Include="Data\retouch-wordlist-javascript.csv" />
+    <None Include="Data\retouch-wordlist-powershell.csv" />
+    <None Include="Data\retouch-wordlist-python.csv" />
+    <None Include="Data\retouch-wordlist-redwords.csv" />
+    <None Include="Data\retouch-wordlist-vbe.csv" />
+    <None Include="Data\retouch-wordlist-vbscript.csv" />
+    <None Include="Data\retouch-wordlist-wechall.csv" />
+    <None Include="Data\retouch-wordlist.csv" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
