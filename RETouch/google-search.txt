@@ -1,0 +1,4 @@
+ext:[FILEEXT]
+inurl:[URLSTRING]
+intitle:[TITLESTRING]
+intext:[TEXTSTRING]
